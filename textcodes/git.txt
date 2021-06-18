@@ -1,0 +1,8 @@
+git remote show origin - 
+git branch - Посмотреть ветки
+git log - Логи
+git diff - посмотреть изменение
+
+git branch -r - Список удаленных веток
+git checkout -b LocalName origin/remotebranchname
+git fetch origin - Стянуть все ветки

@@ -1,0 +1,137 @@
+
+
+h1 {										/*!!!!!!!!Шрифтовые правила!!!!!!!!!*/
+	background-color:#9ff;		/*Фон*/
+	color:#000;
+	font-style:italic;	/* Делает текст курсивом */
+	font-variant:small-caps;/* Делает начертание как за главные, а размер тот же */
+	font-weight:bold;		/* Жирность шрифта */
+	font-size:4em;			/* Размер шрифта */
+	line-height:110%; 		/* Высота линий (вверх и вниз) */
+	font-family:calibri, sans-serif;/* Тип шрифта */
+			/* font: style-variant-weight-size-family;	<--Короткий способ написание Size и Family объязательны*/
+	/*font:italic small-caps bold 4em/3em calibri, sans-serif;*/
+}
+
+h2 {											/*!!!!!!!!Текстовые правила!!!!!!!!!*/
+	text-align:center;				/*Выравнивания текста */
+	text-decoration:none;			/*Уберает черту ссылки*/
+	text-indent:-50px;				/*Красная строка (- и +)*/
+	text-transform:capitalize;		/*Изменяет значение Капса	<--capitalize-uppercase-lowercase|Первые заглавные-Подкапсом-Без капса */
+	letter-spacing:-1px;				/*Расстояние между буквами в тексте (- и +) */
+	word-spacing:15px;				/*Расстояние между словами в тексте (- и +) */
+	vertical-align:10;				/*Здвиг по базовай линий (- и +) */
+	}
+
+li {
+	list-style-type:upper-roman;	/*Маркеровка <--circle|disc|square|decimal|lower-alpha|upper-alpha|lower-roman|upper-roman*/
+	list-style-position:inside;	/*Обалсть маркирования поумолчанию "outside" */
+	list-style-image:url(ball.gif);/*Маркировка припомощи картинки*/
+	
+	list-style:inside url(ball.gif) upper-roman; /*Сокращение (порядок не имеет значение)*/
+}
+
+.fuf {
+	background-color:#dff;			/*Цвет фона */
+	background-image:url(ball.gif); /*Картинка в фоне */
+	background-repeat:no-repeat;	/*Повторение картинки <--repeat-x|repeat-y */
+	background-position:200px 200px;/*Позицианирование картинки (x и y)<--%, px */
+	background-attachment:fixed;	/*Позицианирование (фиксированный) картинки от области просмотра (поумолчанию scroll)*/
+}
+p{
+	display:inline; /*Меняет блочные на строчные элементы и наобарод (block)*/
+}
+
+h3 {
+	margin:10px 50px 110px;			/* Отступ снаружи */
+	padding:40px;						/* Отступ изнутри */
+	border:10px dotted #f0f;		/* Рамка */
+	background-color:#ccf;
+}
+
+#guf {
+	background-attachment:fixed;
+	background-image:url(../../../../../../images/images/86142.jpg);
+	background-repeat:no-repeat;
+}
+
+.ppp {
+	font-size:120%;
+}
+
+.class									/*Универсальный класс (class="...")*/
+#id										/*Уникальный id (id="...")*/
+
+[title] {									/* Ищю Любой Атрибут (в данном случай "title")*/
+	
+}  						
+[title="Пример примерович"] {		/* Ищю Любое значение атрибута (в данном случай "Пример примерович")*/
+
+}  						
+[title~="Пример"] {					/*Ищю Часть значение атрибута (в данном случай слово "пример")*/
+	font-size:2em;
+}							
+[title*="име"] {						/*Нахождение символов в любом месте, в значение этого атрибута (в данном случай "име")*/
+	color:#f00;
+}
+h1:first-letter    /*Первый символ*/
+<embed type="" src=""> - /*Для открытия файлов*/
+<object type="" data=""> - /*Для открытия файлов*/
+
+/*Колонки*/
+{
+	column-count: 3;	/*Количество колонок*/
+	column-width: 200px; /*Ширина колонок*/
+	column-gap: 2px;	/*Резмер между колонками*/
+	column-rule: 1px solid #ccc; /*Отрисовывает линию между колонками*/
+}
+s {
+	opacity: 0.2; - Прозрачность
+	border-radius: 7px; /*Округляет концы*/
+	border-collapse: separate;  /* Способ отображения границы */
+	border-spacing: 7px 11px; /* Расстояние между ячейками */ 
+	box-shadow: 1px 1px 57px rgba(0, 0, 0, 0.63); /*Тень*/
+	background: -webkit-radial-gradient(30px 20px, cover, #fff, #000); /*Градиент*/
+
+    filter: blur(6px);	/* Прифексный */
+    transition: all 0.5s ease-in-out;
+		will-change: blur; /* Не понятно что */
+}
+[class|="sub"]{ где в начале имеется
+	input:not([type="submit"])
+}
+
+
+
+
+/*
+								Bootstrap
+*/
+
+
+.container-fluid - /* Для резиновых */
+class="clearfix visible-xs-block" - /* Зброс обтекание */
+.row - /* Класс строки */
+.col - /* Класс столба */
+.col-xs- - /*Экстра Маленькие <750*/
+.col-sm- - /*Маленькие 750>*/
+.col-md- - /*Средние 970>*/
+.col-lg- - /*Огромные 1170>*/
+
+.-offset-4 - /* Отступ (столбкик-размер-offset-количество ячеек) */
+.-push -  /* Здвиг вправа */
+.-pull -  /* Здвиг влева */
+.hidden-md - /* Скрывает */
+.visible-md - /* Показывает */
+
+/*
+								SASS
+*/
+{
+color: darken(rgba($color, 0.5), 20%);
+@mixin - Миксины
+@include .... - /* Вставки миксин */
+$myVar: if($var=="boy", true, false);
+color: hsl(hue($navbar_color), 50%, 50%);
+
+}
